@@ -30,17 +30,28 @@
       ul {
         list-style-type: none;
         padding: 0;
-        margin-top: 30px;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
       }
 
       /* 🔥 개별 버튼 스타일 */
       li {
         margin: 15px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
       }
 
       a {
-        display: inline-block;
-        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
         padding: 15px 20px;
         font-size: 18px;
         font-weight: 600;
@@ -64,10 +75,14 @@
     <h1>멀캠 근처 맛집 추천</h1>
 
     <ul>
-      <li><a href="pages/GATUSI.html">가츠시</a></li>
-      <li><a href="pages/pobi.html">포비</a></li>
-      <li><a href="pages/mealplanb2.html">밀플랜비</a></li>
-      <li><a href="pages/mak.html">막창</a></li>
+      <div>
+        <li><a href="pages/GATUSI.html">가츠시</a></li>
+        <li><a href="pages/pobi.html">포비</a></li>
+      </div>
+      <div>
+        <li><a href="pages/mealplanb2.html">밀플랜비</a></li>
+        <li><a href="pages/mak.html">막창</a></li>
+      </div>
     </ul>
 
     <script src="js/script.js"></script>
