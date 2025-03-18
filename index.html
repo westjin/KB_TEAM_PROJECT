@@ -1,10 +1,57 @@
-  - **각자 개발한 페이지로 이동하는 링크** 
-   - 각자 하나의 페이지 개발
-   - pages/ (예시)
-        -GATUSI.html - 양서진
-        - pobi.html - 이혜원
-        - mealplanb2.html - 권다연
-        - mak.html - 염다빈
-   - css/
-   - js/
-      - 공통코드
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개발한 페이지 링크</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f7fb;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px 0;
+        margin: 0;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 15px 0;
+      }
+      a {
+        text-decoration: none;
+        color: #4caf50;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: 2px solid #4caf50;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>멀캠 근처 맛집 추천</h1>
+    <ul>
+      <li><a href="pages/GATUSI.html">가츠시</a></li>
+      <br />
+      <li><a href="pages/pobi.html">포비</a></li>
+      <br />
+      <li><a href="pages/mealplanb2.html">밀플랜비</a></li>
+      <br />
+      <li><a href="pages/mak.html">막창</a></li>
+    </ul>
+    <script src="js/script.js"></script>
+  </body>
+</html>
