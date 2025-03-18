@@ -3,55 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>개발한 페이지 링크</title>
+    <title>멀캠 근처 맛집 추천</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
+      /* 🔥 전체 페이지 스타일 */
       body {
-        font-family: "Arial", sans-serif;
-        background-color: #f4f7fb;
+
+        font-family: "Noto Sans", sans-serif;
+        background: linear-gradient(to bottom, #e3f2fd, #ffffff);
         text-align: center;
         margin: 0;
         padding: 0;
+        height: 100vh;
       }
+
+      /* 🔥 상단 헤더 스타일 */
       h1 {
         background-color: #4caf50;
         color: white;
         padding: 20px 0;
         margin: 0;
+        font-size: 28px;
+        font-weight: bold;
       }
+
+      /* 🔥 링크 버튼 목록 */
       ul {
         list-style-type: none;
         padding: 0;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
       }
+
+      /* 🔥 개별 버튼 스타일 */
       li {
         margin: 15px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
       }
+
       a {
-        text-decoration: none;
-        color: #4caf50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        padding: 15px 20px;
         font-size: 18px;
-        padding: 10px 20px;
-        border: 2px solid #4caf50;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-      }
-      a:hover {
+        font-weight: 600;
+        text-decoration: none;
+        color: #ffffff;
         background-color: #4caf50;
-        color: white;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* 🔥 버튼 호버 효과 */
+      a:hover {
+        background-color: #388e3c;
+        transform: scale(1.05);
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
       }
     </style>
   </head>
   <body>
     <h1>멀캠 근처 맛집 추천</h1>
+
     <ul>
-      <li><a href="pages/GATUSI.html">가츠시</a></li>
-      <br />
-      <li><a href="pages/pobi.html">포비</a></li>
-      <br />
-      <li><a href="pages/mealplanb2.html">밀플랜비</a></li>
-      <br />
-      <li><a href="pages/mak.html">막창</a></li>
+      <div>
+        <li><a href="pages/GATUSI.html">가츠시</a></li>
+        <li><a href="pages/pobi.html">포비</a></li>
+      </div>
+      <div>
+        <li><a href="pages/mealplanb2.html">밀플랜비</a></li>
+        <li><a href="pages/mak.html">막창</a></li>
+      </div>
     </ul>
+
     <script src="js/script.js"></script>
   </body>
 </html>
